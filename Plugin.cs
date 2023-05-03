@@ -24,15 +24,11 @@ namespace GorillaTagModTemplateProject
 			mirror = GameObject.Find("/Level/lower level/mirror (1)");
 			mirrorBoard = GameObject.Find("/Level/lower level/mirror (1)/board");
 			mirrorStand = GameObject.Find("/Level/lower level/mirror (1)/stand");
-
-		}
-
-		void Update()
-		{
 			mirror.SetActive(this.enabled);
 			mirror.GetComponentInChildren<MeshCollider>().enabled = false;
 			mirrorBoard.GetComponent<MeshCollider>().enabled = false;
 			mirrorStand.GetComponent<MeshCollider>().enabled = false;
+
 		}
 	}
 }
